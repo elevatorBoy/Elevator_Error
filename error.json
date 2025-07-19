@@ -1,0 +1,1455 @@
+[
+    {
+        "code": "E01",
+        "description": "Tür nicht geschlossen",
+        "reaction": "Tür blockiert oder Sensor defekt",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "E07",
+        "description": "Notrufsystem gestört",
+        "reaction": "Verbindung zur Notrufzentrale unterbrochen",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "E24",
+        "description": "Fahrbefehel nicht ausführbar",
+        "reaction": "Ziel nicht ereichbar, Steuerung neu starten",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "F5",
+        "description": "FU Fehler",
+        "reaction": "Antrieb oder Steuerung prüfen",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "E35 ",
+        "description": "Überlast erkannt",
+        "reaction": "Zuviel Gewicht im Aufzug",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "E61",
+        "description": "Lichtschranke unterbrochen",
+        "reaction": "Lichtschranke / Sensoren Überprügen",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "E88",
+        "description": "Kommunikationsfehler",
+        "reaction": "Verbindung zur Steuerung oder Kabine Verloren",
+        "manufacturer": "Schindler"
+    },
+    {
+        "code": "E99",
+        "description": "Allgemeiner Systemfehler",
+        "reaction": "Alles Anzünden oder besser Reset",
+        "manufacturer": "Schindler"
+    },
+  {
+    "code": "136/283",
+    "description": "4.14 Fehlertabelle",
+    "reaction": "Nr.  Fehlermeldung  Beschreibung  Steuerungsreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "16/1",
+    "description": "AWG Band defekt Magnetband des",
+    "reaction": "Absolutwertgebers AWG  defekt  Band prüfen und evtl.  wechseln  Genauere Fehleranalyse  siehe Beschreibung AWG",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "32/112",
+    "description": "Pos. Defekt",
+    "reaction": "Positioniersystem defekt  Nothalt  Diese Fehlermeldung erfolgt  z.B. durch einen  Absolutwertgeber mit CAN- Anschluss, wenn das  Magnetband gerissen ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "32/112",
+    "description": "AWG defekt",
+    "reaction": "Positioniersystem  (Absolutwertgeber AWG)  defekt  Nothalt; Weiterfahrt wenn der  AWG den Fehler zurück  gesetzt hat.  Genauere Fehleranalyse  siehe Beschreibung AWG",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "49/0",
+    "description": "Phasenfehler",
+    "reaction": "Phasenfehler (Signal eines  externer Phasenwächters)  Nothalt; danach Außer  Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "49/1",
+    "description": "Fahrkorblicht",
+    "reaction": "Fahrkorblichtspannung fehlt  Seilaufzug: Halt in nächster  Etage  Hydraulikaufzug: Fahrt in  unterste Etage, Rückkehr  zum Normalbetrieb, wenn  Fahrkorblichtspannung  wieder anliegt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "50/0",
+    "description": "Akkubetrieb",
+    "reaction": "24V Versorgungsspannung  ausgefallen. Alle anderen  Fehler werden in diesem  Zustand ignoriert.  Nothalt, danach  Fehlerzustand. Autom.  Rückkehr in Normalbetrieb,  wenn Versorgungsspannung  wieder anliegt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/0",
+    "description": "SK fehlt",
+    "reaction": "Sicherheitskreis aufgrund  eines Fehlers geöffnet  Fehlerzustand “SK fehlt”.  Autom. Rückkehr in  Normalbetrieb, wenn  Sicherheitskreis wieder  geschlossen ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/1",
+    "description": "SK auf b.Fahrt",
+    "reaction": "Sicherheitskreis während  einer Fahrt aufgrund eines  Fehlers geöffnet  Nothalt, danach  Fehlerzustand “SK fehlt”.     Autom. Rückkehr in  Normalbetrieb, wenn  Sicherheitskreis wieder  geschlossen ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/2",
+    "description": "SK Tür fehlt",
+    "reaction": "Sicherheitskreis Drehtür,  Fahrkorbtür oder Schachttür  fehlt, während der Aufzug  versucht, eine Fahrt zu  4 Sek. warten, danach  werden Türen wieder geöffnet  und erneut geschlossen  (siehe auch Beschreibung der",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "137/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  starten.  Türen)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/3",
+    "description": "SK",
+    "reaction": "Notendschalt.   Aufzug (wahrscheinlich) in  Notendschalter gefahren.  Die Fehlermeldung wird  generiert, wenn der primäre  Sicherheitskreis fehlt, während  sich der Aufzug in der  obersten bzw. untersten Etage  befindet.  Da die Notendschalter in der  Regel nur über den  Sicherheitskreis überwacht  werden (keine zusätzlichen  separaten Kontakte), kann  natürlich die Fehlerursache  auch bei einem anderen  Kontakt innerhalb des  primären Sicherheitskreis  liegen.  Seilaufzüge: Rückkehr in  Normalbetrieb, wenn der  Sicherheitskreis wieder  vorhanden ist    Hydraulikaufzüge: Ist der  Sicherheitskreis wieder  geschlossen, dann fährt der  Aufzug in die unterste Etage  und bleibt dort außer Betrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/4",
+    "description": "Insp.endschalter Sicherheitskreis",
+    "reaction": "Inspektionsendschalter  geöffnet  Nothalt; Weiterfahrt in  entgegengesetzter Richtung  möglich",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/4",
+    "description": "Antr.störung-SK",
+    "reaction": "Fehlermeldung vom Antrieb  während einer Fahrt.  Gleichzeitig war der  Sicherheitskreis geöffnet.  Da der Antrieb in der Regel  ebenfalls einen geöffneten  Sicherheitskreis erkennt  (Abfall der Schütze), ist nicht  sicher, ob die eigentliche  Fehlerursache beim Antrieb  oder aber beim  Sicherheitskreis liegt.  Nothalt  Autom. Rückkehr in  Normalbetrieb, wenn  Sicherheitskreis wieder  geschlossen ist und die  Fehlermeldung vom Antrieb  nicht mehr aktiv ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/5",
+    "description": "Lichtvorhang",
+    "reaction": "Sicherheitslichtgitter während  einer Fahrt unterbrochen.  Nothalt  Der Lichtvorhang wird  zurückgesetzt beim Betätigen  eines neuen Innenrufes.  Danach Rückkehr in  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/16",
+    "description": "Fehl.SK-Brücke",
+    "reaction": "Nach EN81-20 darf der  Sicherheitskreis Türen für  Servicezwecke per Schalter  gebrückt werden. Diese  Brücke kann über einen oder  Nur Rückholung und  Inspektion möglich.  Der Fehler wird erst gelöscht,  wenn beim Aktivieren der  Überbrückung alle Kontakte",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "138/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  mehrere Kontakte durch die  Steuerung überwacht werden.  Der Fehler wird gesetzt, wenn  nicht alle  Überwachungskontakte den  gleichen Zustand haben  gesetzt sind.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/17",
+    "description": "SK Fang offen",
+    "reaction": "Fangkontakt geöffnet  (Fangvorrichtung ausgelöst)  Zur Überwachung ist ein  zusätzlicher  Sicherheitskreisabgriff direkt  vor dem Fangkontakt  (\"Sich.kreis\" - \"SK vor Fang\")  erforderlich.  Der Fehler kann nur über  einen Eingang \"Sich.kreis\" -  \"Fang Reset\" gelöscht  werden.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/18",
+    "description": "SK Schachttür",
+    "reaction": "an  Sicherheitskreis Schachttüren  geschlossen, obwohl Türen  geöffnet sind.  Überwachung nach EN81-20.  Sicherheitskreis prüfen; evtl.  Brücke entfernen.  Zurück zum Normalbetrieb  durch Reset oder durch  Einschalten  Rückholsteuerung bzw.  Inspektion für mindestens 5 s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/19",
+    "description": "SK Tür",
+    "reaction": "Testfehl.  Fehler beim Test  Sicherheitskreis Schachttüren  nach EN81-20  Testschaltung prüfen: Nach  dem kompletten Öffnen der  Türen wird kurzzeitig die  Türüberbrückung  (Sicherheitsschaltung)  zugeschaltet. Dadurch erhält  der Sicherheitskreiseingang  SK4 Spannung. Ist das nicht  der Fall (z.B. durch  Verdrahtungsfehler oder  Fehler in der  Sicherheitsschaltung), dann  wird dieser Fehlercode  gesetzt.  Beim 4. Auftreten des Fehlers  legt sich der Aufzug still und  kann nur über ein Reset  wieder in den Normalbetrieb  gebracht werden.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/20",
+    "description": "SK Drehtür an",
+    "reaction": "Sicherheitskreis Drehtüren  geschlossen, obwohl diese  Überwachung nach EN81-20.  Sicherheitskreis prüfen; evtl.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "139/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  geöffnet sind (2. Kontakt der  Drehtür zu Aufzugssteuerung)  Brücke entfernen.  Zurück zum Normalbetrieb  durch Reset oder durch  Einschalten  Rückholsteuerung bzw.  Inspektion für mindestens 5 s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "52/21",
+    "description": "Türriegel fehlt Zusätzlicher Kontakt an der",
+    "reaction": "Türverriegelung bei Fahrt oder  beim Anfahren geöffnet  Fehlt der Kontakt beim  Anfahren, dann öffnet die  Aufzugssteuerung die Tür  und schließt sie nach einer  kurzen Wartezeit erneut.  Dieser Vorgang wird bis zu 4- mal wiederholt, danach  werden alle Rufe gelöscht.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "53/0",
+    "description": "Batterie defekt Gemessene Akkuspannung",
+    "reaction": "unterhalb 7V oder aber bei 3  aufeinanderfolgenden  Messungen unterhalb des  eingestellten Grenzwertes  (Parameter \" Batt.[mV]\")  Aufzug außer Betrieb.  Nach dem Austausch des  Akkus muss manuell die  Akkuspannung gemessen  werden, damit der Aufzug  wieder in Betrieb geht  (Menüpunkt \"Batterietest\")  oder ein Reset durchgeführt  werden",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "53/1",
+    "description": "Batteriewarnung Gemessene Akkuspannung",
+    "reaction": "unterhalb des eingestellten  Grenzwertes (Parameter \"  Batt.[mV]\")  Akku eventuell defekt oder  aber aufgrund eines  temporären  Spannungsausfalls noch nicht  wieder vollgeladen.  Aufzug weiterhin in Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "66/0",
+    "description": "Platinentemp.  Platine zu heiß",
+    "reaction": "Nur zur Information;  momentan ist nur die FVE 2.1  mit einem entsprechenden  Sensor ausgestattet; hier wird  der Eingangsstrom  automatisch reduziert",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "67/0",
+    "description": "Motorübertemp.1",
+    "reaction": "Motor Übertemperatur  (Eingang “Übertemp. 1“  aktiviert).  Die Auslösetemperatur hängt  von der Kennlinie des  Kaltleiters ab.  Seilaufzug: Halt in der  nächstmöglichen Etage.  Nach dem Abkühlen  (Deaktivierung des  Einganges) Rückkehr zum  Normalbetrieb.    Hydraulikaufzug: Fahrt zur  untersten Etage;  Nachregulieren bleibt aktiv.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "140/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  Nach dem Abkühlen  (Deaktivierung des  Einganges) Rückkehr zum  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "67/1",
+    "description": "Motorübertemp.2",
+    "reaction": "Motor Übertemperatur  (Eingang “Übertemp. 2“  aktiviert).  Die Auslösetemperatur hängt  von der Kennlinie des  Kaltleiters ab.  siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "67/2",
+    "description": "Masch.raumtemp. ",
+    "reaction": "Maschinenraumtemperatur  unterhalb Limit (Eingang  “Raumtemp.min“ aktiviert).  siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "67/3",
+    "description": "Masch.raumtemp. ",
+    "reaction": "Maschinenraumtemperatur  oberhalb Limit (Eingang  “Raumtemp.max“ aktiviert).  siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "67/4",
+    "description": "HSE- Temp.sensor",
+    "reaction": "HSE-Platinentemp. zu niedrig  siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "67/5",
+    "description": "HSE- Temp.sensor",
+    "reaction": "HSE-Platinentemp. zu hoch  siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "80/1",
+    "description": "Falscher Code",
+    "reaction": "Eine Baugruppe mit einer  ungültigen Hardwarekodierung  (Sicherheitscode) befindet  sich am CAN-Bus.  Die Baugruppe mit dem  ungültigen Hardwarecode  wird durch das System  ignoriert (siehe Kapitel  Hardware-Kodierung)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "96/0",
+    "description": "SW-Fehler",
+    "reaction": "Fehler im Programmablauf,  wahrscheinlich ausgelöst  durch EMV-Störungen oder  z.B. kalte Lötstellen auf der  Leiterplatte  EMV-gerechte Verdrahtung  des Aufzuges prüfen, evtl.  Hauptplatine tauschen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/0",
+    "description": "Int.SW-Fehler",
+    "reaction": "oder  Aufzug WD-Reset  Interner Softwarefehler einer  Baugruppe, Auslösen des  „Watchdog-Timers”, Software- Neustart.  Nothalt, Neuinitialisierung  dieser Baugruppe, danach  Rückkehr zu Normalbetrieb.  Tritt dieser Fehler bei einer  TSE- oder ESE-Baugruppe  auf, so erfolgt die  Neuinitialisierung im  laufenden Betrieb, d.h., ohne  Nothalt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/1",
+    "description": "Aufzug Neustart",
+    "reaction": "Zuschalten der Spannung  Aufzug startet Referenzfahrt  (falls Setup beendet).",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/2",
+    "description": "Neustart xxx",
+    "reaction": "(xxx =  Baugruppenname)  Software-Neustart einer  Baugruppe im laufenden  Betrieb (z.B. beim Anstecken  einer ESE-Baugruppe an  Nothalt, Neuinitialisierung  dieser Baugruppe, danach  Rückkehr zu Normalbetrieb.  Tritt dieser Fehler bei einer",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "141/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  einen laufenden Aufzug).  TSE- oder ESE-Baugruppe  auf, so erfolgt die  Neuinitialisierung im  laufenden Betrieb, d.h., ohne  Nothalt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/3",
+    "description": "ASE Softw.<1.40 Aufgrund von Änderungen im",
+    "reaction": "CANopen-Standard gibt es  Kompatibilitätsprobleme beim  Einsatz von HSE-Baugruppen  mit Version ab 1.32n und  ASE-Baugruppen älter als  Version 1.40.  Diese Fehlermeldung kann  fälschlicherweise auch bei  EMV-Problemen auftauchen  (siehe Fehler oben)  Aufzug fährt nicht; es muss  entweder eine HSE mit einer  älteren Version oder eine  ASE mit Softwareversion ab  1.40 eingesetzt werden",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/4",
+    "description": "FVE Softw.<1.40 Siehe oben",
+    "reaction": "Aufzug fährt nicht; es muss  entweder eine HSE mit einer  älteren Version oder eine  FVE mit Softwareversion ab  1.40 eingesetzt werden",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/5",
+    "description": "Lift SW-Reset",
+    "reaction": "Es wurde ein Reset über die  Tastatur der HSE bzw.  Handterminal durchgeführt",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "97/6",
+    "description": "Lift HW-Reset",
+    "reaction": "Es wurde ein Reset über den  Resettaster auf der HSE  durchgeführt",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "98/1",
+    "description": "Gruppenparam.",
+    "reaction": "In einer Aufzugsgruppe sind  die Parameter für die  Schachtbusbaugruppen ESE  nicht bei allen Aufzügen  identisch  Menüpunkt  „Gruppensynchronisation“  durchführen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "98/2",
+    "description": "Antriebsparam.",
+    "reaction": "Nur bei CAN-Open-Umrichter:  Die Umrichterparameter  stimmen nicht mit den in der  Aufzugsteuerung  gespeicherten Parametern  überein.  Zur Synchronisation  Umrichterparameter auslesen  (Menüpunkt  „Antriebsparameter“) und in  der Steuerung abspeichern  128/xx SMS Sendefehler  Fax Sendefehler  PC Sendefehler  u.ä.  Fehler beim Sendeversuch  einer SMS, eines Faxes oder  einer Alarmmeldung an einen  PC (Datenfernübertragung)  Datenübertragung prüfen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/16",
+    "description": "129/17",
+    "reaction": "129/18  CAN Störung   CAN Stör.HW-Üb.  CAN SW Overrun  CANB HW Overrun  Störung in der  Datenübertragung auf dem  CAN-Bus  Abhängig vom CAN- Fehlertyp:  Automatische Wiederholung",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "142/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/19",
+    "description": "129/20",
+    "reaction": "129/21",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/22",
+    "description": "129/23",
+    "reaction": "129/32  CANB SW Overrun  CAN Stör.RXC  CAN Stör.HW-Üb1  CAN Stör.HW-Üb2  CAN Stör.HW-Üb3  CAN Stör.Passiv  (CANB=Schachtbus).  Bei einer Störung wird die  letzte CAN-Bus-Nachricht  automatisch wiederholt, so  dass es zu keinem  Datenverlust kommt.  Dieser Fehler kann z.B. beim  Schalten des Hauptschalters  oder beim Anstecken neuer  Baugruppen an den CAN-Bus  auftreten.  Beim gehäuften Auftreten von  CAN-Bus-Störungen sollten  Busleitung und  Busbaugruppen untersucht  werden (siehe Kapitel  „Fehlersuche bei CAN-Bus- Störungen“).  der gestörten CAN-Bus- Nachricht; keine weitere  Fehlerreaktion.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/48",
+    "description": "Keine Busverb.",
+    "reaction": "xxx  (xxx =  Baugruppenname)  Kein Empfang der  „Heartbeat“-Nachricht einer  Baugruppe (xxx) durch die  HSE.  Alle CAN-Bus-Baugruppen  senden innerhalb einer  festgelegten Zeit eine  „Heartbeat“-Nachricht zur  gegenseitigen Überwachung.  Nothalt.  Wird der „Heartbeat“ dieser  Baugruppe wieder  empfangen, erfolgt die  Rückkehr zum Normalbetrieb. Tritt dieser Fehler bei einer  TSE- oder ESE-Baugruppe  auf, so erfolgt kein Nothalt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/49",
+    "description": "HSE-Verb.",
+    "reaction": "Kein Empfang der  “Heartbeat”-Nachricht der  HSE.  Nothalt.  Nach einer internen Diagnose  Rückkehr zum Normalbetrieb. Empfangen TSE- bzw. ESE- Baugruppen keine  „Heartbeat“-Nachricht von der  HSE, dann löschen sie  automatisch alle Rufe und  setzen die Außer-Betrieb- Anzeige.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/50",
+    "description": "Pflicht-ESE weg Eine als „Pflicht“-ESE",
+    "reaction": "parametrierte Baugruppe  befindet sich nicht am  Schachtbus (Baugruppe  defekt oder CAN-Bus gestört)  Beenden der aktuellen Fahrt,  danach außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/51",
+    "description": "Pflicht-TSE weg Eine als „Pflicht“-TSE",
+    "reaction": "parametrierte Baugruppe  befindet sich nicht am  Beenden der aktuellen Fahrt,  danach außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "143/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  Steuerbus (Baugruppe defekt  oder CAN-Bus gestört)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/64",
+    "description": "CAN Ausfall",
+    "reaction": "Automatische Abschaltung  des CAN-Busses durch zu  viele  Datenübertragungsstörungen.    Nothalt, danach erfolgt ein  interner Test der  Datenübertragung.  Funktioniert die  Datenübertragung wieder  fehlerfrei, dann erfolgt die  Rückkehr zum Normalbetrieb. Beim CAN-Ausfall einer TSE-  bzw. ESE-Baugruppe bleibt  der Aufzug in Betrieb; es  erfolgt kein Nothalt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/65",
+    "description": "CANB Ausfall",
+    "reaction": "Automatische Abschaltung  des CAN-Busses B  (Schachtbus!) durch zu viele  Datenübertragungsstörungen.  Aufzug bleibt in Betrieb;  interner Test der  Datenübertragung am  Schachtbus",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/81",
+    "description": "ESE-Stör.Strangx Am Schachtbus (Strang x)",
+    "reaction": "sind  Datenübertragungsstörungen  aufgetreten  Evtl. Schachtbus prüfen  (Abschlusswiderstand, ...)  Störungsursache kann auch  das Zu-/Abschalten eines  Aufzuges innerhalb einer  Gruppe sein.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/82",
+    "description": "Störung Strang",
+    "reaction": "x  Die Datenübertragung an  einem Strang des  Schachtbusses ist komplett  zusammen gebrochen  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/83",
+    "description": "Stör.lokale ESE Datenübertragung zu einer auf",
+    "reaction": "der Hauptplatine  aufgesteckten ESE gestört (in  der Regel Knotennummer ab  50.1)  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/96",
+    "description": "Kein Steuerbus",
+    "reaction": "Datenübertragung am CAN- Bus (Steuerbus) nicht möglich.   Evtl. Gründe:  - Kein Buskabel  angeschlossen  - Keine weitere Busbaugruppe  angeschlossen  Nothalt, danach erfolgt  interner Test der  Datenübertragung.  Funktioniert die  Datenübertragung wieder,  dann erfolgt die Rückkehr  zum Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/97",
+    "description": "CAN Störg.TX",
+    "reaction": "CAN-Sendepufferüberlauf  Steuerbus.  Evtl. Gründe  - Busauslastung zu groß  - sehr häufig schaltende  Eingänge  Nothalt:  Eingangsbeschaltung testen,   evtl. Steuerungshersteller  kontaktieren",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "144/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  - Fehler in der  Steuerungssoftware",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/98",
+    "description": "Kein",
+    "reaction": "Schachtbus  Datenübertragung am CAN- Bus (Schachtbus) nicht  möglich.   Evtl. Gründe:  - Kein Buskabel  angeschlossen  - Keine weitere Busbaugruppe  angeschlossen  Kein Nothalt; nur interner Test  der Datenübertragung.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/99",
+    "description": "CANB Störg.TX",
+    "reaction": "CAN-Sendepufferüberlauf  Schachtbus.  Evtl. Gründe  - Busauslastung zu groß  - sehr häufig schaltende  Eingänge  - Fehler in der  Steuerungssoftware  Eingangsbeschaltung testen,   evtl. Steuerungshersteller  kontaktieren",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/10",
+    "description": "0",
+    "reaction": "Kein  Kab.tableau   Keine CAN-Bus-Verbindung  zu den TSE-Baugruppen.  Mögliche Ursachen:  - TSEs defekt  - Tableau nicht angeschlossen - CAN-Bus gestört  Aufzug fährt weiter und  versucht permanent, die  Kommunikation zu den  Tableaubaugruppen  aufzubauen.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/12",
+    "description": "8",
+    "reaction": "Datenüberl.RS23 2  Datenverlust auf der RS232- Schnittstelle (Datenrate zu  hoch)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/12",
+    "description": "9",
+    "reaction": "Offl.Stör.RS232 Störsignale auf RS232 im  Offline-Modus",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/13",
+    "description": "0",
+    "reaction": "Onl.Stör.RS232  Störsignale auf RS232 im  Online-Modus",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/13",
+    "description": "1",
+    "reaction": "CRC-Fehler  RS232  Ungültige Daten empfangen  (Falsche Checksumme) auf  RS232",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/14",
+    "description": "4",
+    "reaction": "Datenüb.iModul  Datenverlust Verbindung zum  Aufsteckmodul (Modem,  Ethernet, ...)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/14",
+    "description": "5",
+    "reaction": "Offl.Stör.iModu l  Störsignale beim  Aufsteckmodul (Modem,  Ethernet, ...) im Offline-Modus",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/14",
+    "description": "6",
+    "reaction": "Onl.Stör.  iModul  Störsignale beim  Aufsteckmodul (Modem,  Ethernet, ...) im Online-Modus",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "129/14",
+    "description": "7",
+    "reaction": "CRC-Fehl.iModul Ungültige Daten empfangen  (Falsche Checksumme) auf",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "145/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  beim Aufsteckmodul (Modem,  Ethernet, ...)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "130/48",
+    "description": "Grupp.nr.doppel t",
+    "reaction": "Es befinden sich 2 HSE- Baugruppen mit der gleichen  Gruppennummer in einer  Aufzugsgruppe.  Der Aufzug fährt weiter,  allerdings funktionieren  Außenrufe und  Gruppensteuerung nicht  richtig.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "144/1",
+    "description": "Min.Druck",
+    "reaction": "Für Hydraulikaufzüge: Öldruck  unterhalb des Limits (Eingang  “Min.Druck” aktiviert).  Nothalt.  Rückkehr zum Normalbetrieb,  wenn der Eingang wieder  deaktiviert ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "144/2",
+    "description": "Max.Druck",
+    "reaction": "Für Hydraulikaufzüge: Öldruck  oberhalb des Limits (Eingang  “Max.Druck” aktiviert).  Nothalt.  Rückkehr zum Normalbetrieb,  wenn der Eingang wieder  deaktiviert ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "144/16",
+    "description": "Überlast",
+    "reaction": "Aufzug überladen  Das Überlastsignal wird nur  ausgewertet, wenn der  Aufzug mit geöffneten Türen  in der Etage steht.  Weiterfahrt erst wenn  Überlast beseitigt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "160/0",
+    "description": "Antriebsstörung",
+    "reaction": "Störmeldung vom Antrieb im  Stillstand (siehe auch  Beschreibung  „Antriebssteuerung“).  Fehlerzustand.  Nach Wegfall der  Fehlermeldung Rückkehr zum  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/0",
+    "description": "Antr.stör.Fahrt",
+    "reaction": "Störmeldung vom Antrieb bei  Fahrt (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Nach Wegfall der  Fehlermeldung Rückkehr zum  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/1",
+    "description": "TimeoutBereitsi g",
+    "reaction": "oder   Kein  Bereitsign.  Das „Bereit”-Signal vom  Antrieb wird nicht rechtzeitig  aktiviert (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/2",
+    "description": "Timeout",
+    "reaction": "Bremssig  oder   Kein  Bremssignal  Die Bremsfreigabe vom  Antrieb wird nicht rechtzeitig  aktiviert (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/3",
+    "description": "Timeout",
+    "reaction": "Bereit=0  oder   Bereitsign.n.au s   Das “Bereit”-Signal vom  Antrieb wird nicht rechtzeitig  deaktiviert (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/4",
+    "description": "Timeout",
+    "reaction": "Bremse=0  Die Bremsfreigabe vom  Nothalt, danach",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "146/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  oder   Bremssign.n.aus   Antrieb wird nicht rechtzeitig  deaktiviert (siehe auch  Beschreibung  „Antriebssteuerung“).  Fehlerzustand „Antr.Fahrt”.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/5",
+    "description": "RB/Schütze aus",
+    "reaction": "Während einer Fahrt wird das  Signal „RB/Schütze“ vom  Antrieb plötzlich deaktiviert  (siehe auch Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/6",
+    "description": "Bremssignal aus",
+    "reaction": "Während einer Fahrt wird das  Bremsfreigabesignal vom  Antrieb plötzlich deaktiviert  (siehe auch Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/7",
+    "description": "Fahrtsignal aus",
+    "reaction": "Während einer Fahrt wird das  „Fahrt“-Signal vom Antrieb  plötzlich deaktiviert (siehe  auch Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/8",
+    "description": "Softstartsig.au s",
+    "reaction": "Während einer Fahrt wird das  Signal „Rampenende“ des  Softstarters plötzlich  deaktiviert (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/9",
+    "description": "Softst=0",
+    "reaction": "b.Fahrt  oder   Kein  Softst.sign  Das Signal „Rampenende“  des Softstarters wird nicht  zugeschaltet (siehe auch  Beschreibung  „Antriebssteuerung“)  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/10",
+    "description": "RB/Schütze an",
+    "reaction": "Das Signal „RB/Schütze“ wird  bei Fahrtende nicht  abgeschaltet  Rückkehr zum Normalbetrieb  wenn das Signal wieder  abgeschaltet ist",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/11",
+    "description": "Bremssign.an",
+    "reaction": "Das Bremsfreigabesignal des  Antriebes ist eingeschaltet,  obwohl kein Fahrbefehl (mehr)  vorliegt  Rückkehr zum Normalbetrieb  wenn das  Bremsfreigabesignal wieder  abgeschaltet ist",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/12",
+    "description": "Softst.sig.an",
+    "reaction": "Das Signal „Rampenende“  des Softstarters ist  eingeschaltet, obwohl kein  Fahrbefehl (mehr) vorliegt  Rückkehr zum Normalbetrieb  wenn das Signal wieder  abgeschaltet ist",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/13",
+    "description": "CAN:TimeoutBrak e",
+    "reaction": "Bei CANopen-Antrieben:  CAN-Message zum Schalten  der Bremse kommt  nicht/kommt zu spät  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "147/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/14",
+    "description": "CAN:Timeout",
+    "reaction": "VoEn  Bei CANopen-Antrieben:  CAN-Message zum Schalten  Spannung (Voltage Enable)  kommt nicht/kommt zu spät  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/15",
+    "description": "CAN:TimeoutRead y",
+    "reaction": "Bei CANopen-Antrieben:  CAN-Message Bereit (Ready  to switch on)  kommt  nicht/kommt zu spät",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/16",
+    "description": "CAN:Timeout",
+    "reaction": "Br=0  Bei CANopen-Antrieben:  CAN-Message zum  Abschalten der Bremse  (Speed zero)  kommt  nicht/kommt zu spät",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/17",
+    "description": "CAN:TimeoutRdy= 0",
+    "reaction": "Bei CANopen-Antrieben:  CAN-Message Bereit=0  (Operation disabled)  kommt  nicht/kommt zu spät",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/18",
+    "description": "RDY-Signal aus",
+    "reaction": "Während einer Fahrt wird das  RDY-Signal vom Antrieb  plötzlich deaktiviert (siehe  auch Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/19",
+    "description": "RDY-Signal an",
+    "reaction": "Das RDY-Signal des  Antriebes ist eingeschaltet,  obwohl kein Fahrbefehl (mehr)  vorliegt  Rückkehr zum Normalbetrieb  wenn das RDY-Signal wieder  abgeschaltet ist",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/20",
+    "description": "RDY-Signal",
+    "reaction": "n.aus  Das “RDY”-Signal vom Antrieb  wird nicht rechtzeitig  deaktiviert (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/21",
+    "description": "CAN:TimeoutOpDi s",
+    "reaction": "Bei CANopen-Antrieben:  CAN-Message zum Anhalten  (Operation disabled)  kommt  nicht/kommt zu spät  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/22",
+    "description": "CAN:TimeoutOpEn Bei CANopen-Antrieben:",
+    "reaction": "CAN-Message zum Losfahren  (Operation enabled)  kommt  nicht/kommt zu spät  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/23",
+    "description": "CAN:Timeout",
+    "reaction": "Move  Bei CANopen-Antrieben:  CAN-Message Geschw. > 0  (No speed zero)  kommt  nicht/kommt zu spät  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/24",
+    "description": "CAN:Timeout",
+    "reaction": "Ziel  Bei CANopen-Antrieben (nur  im Position-Mode): Neue  Nothalt.  Rückkehr zum Normalbetrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "148/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  Zielvorgabe vom Antrieb nicht  quittiert  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "162/0",
+    "description": "Schütz nicht an",
+    "reaction": "Die Fahrtschütze ziehen bei  Fahrtbeginn nicht an oder  fallen bei einer Fahrt plötzlich  ab (siehe auch Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "162/1",
+    "description": "Schütz nicht",
+    "reaction": "aus   Die Fahrtschütze fallen bei  Fahrtende nicht ab (siehe  auch Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb,  sobald die Fahrschütze  abgefallen sind.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/0",
+    "description": "Bremse",
+    "reaction": "n.geöffn.   Die Bremse öffnet bei  Fahrtbeginn nicht bzw.  schließt bei einer Fahrt  plötzlich (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/1",
+    "description": "Kein",
+    "reaction": "Bremsabfall   Die Bremse schließt bei  Fahrtende nicht (siehe auch  Beschreibung  „Antriebssteuerung“).  Nothalt.  Rückkehr zum Normalbetrieb,  sobald die Bremse wieder  geschlossen ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/2",
+    "description": "Bremsüberwachun g",
+    "reaction": "Verschleißgrenze der Bremse  erreicht.  Halt in nächster Etage,  danach geht Aufzug außer  Betrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/3",
+    "description": "Begrenz.nicht",
+    "reaction": "an  Spule am  Geschwindigkeitsbegrenzer  nicht angezogen (bei  Verwendung des Begrenzers  zur Absturzsicherung)  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/4",
+    "description": "Begrenzer n.aus Spule am",
+    "reaction": "Geschwindigkeitsbegrenzer  nicht wieder abgefallen (bei  Verwendung des Begrenzers  zur Absturzsicherung)  Nothalt.  Rückkehr zum Normalbetrieb,  wenn Spule abgefallen ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/5",
+    "description": "163/7",
+    "reaction": "163/9  Ventile  n.geöff.  Sicherheitsventile (A3) öffnen  nicht  Nothalt.  Rückkehr zum Normalbetrieb  nach ca. 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/6",
+    "description": "163/8",
+    "reaction": "163/10  Ventil nicht zu Sicherheitsventile (A3)  schließen nicht  Nothalt.  Normalbetrieb wenn Ventil  geschlossen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/11",
+    "description": "Bremse offen",
+    "reaction": "remse im Stillstand geöffnet Bremse und Bremskontakt  prüfen.  Der Fehler tritt auch auf,  wenn die Bremse manuell  geöffnet wurde",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "149/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/12",
+    "description": "163/13",
+    "reaction": "163/14  Ventile offen  Sicherheitsventile (A3) im  Stillstand geöffnet  Ventilkontakt und Ventil  prüfen.  Der Fehler tritt auch auf,  wenn die Ventile manuell  geöffnet wurden.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/15",
+    "description": "Notvent.n.geöff .",
+    "reaction": "Notsenkventil (\"iValve\") hat  nicht geöffnet  Ventil und Rückmeldekontakt  prüfen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/16",
+    "description": "Notvent.nicht",
+    "reaction": "zu  Notsenkventil (\"iValve\") hat  nicht geschlossen  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "163/17",
+    "description": "163/18",
+    "reaction": "163/19  Bremse 1 defekt  Bremse 2 defekt  Bremse 3 defekt  Der Aufzug hat sich beim  automatischen Bremsentest  im Stillstand um mehr als die  zulässige Toleranz bewegt  Aufzug außer Betrieb,  Rückkehr in Normalbetrieb  nur durch Reset der  Steuerung  164/xx   Fehlermeldung vom  Frequenzumrichter der Fa.  Lust (nur bei Ansteuerung  über CAN-Bus).  Fehlerursache bzw. – Beseitigung siehe Umrichter  Beschreibung.  Nothalt.  Danach wird aller 2s eine  CAN-Nachricht an den  Umrichter zum Quittieren des  Fehlers gesendet.  Sobald der Umrichter den  Fehler löscht, kehrt der  Aufzug zum Normalbetrieb  zurück.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/1",
+    "description": "VO in Terzone",
+    "reaction": "Der obere Vorendschalter VO  schaltet innerhalb der Türzone  (falsche Schaltposition).  Eine mögliche Ursache ist  auch, dass einer der  Türzonenschalter nicht  ausgeschaltet hat.  Nothalt.  Rückkehr zu Normalbetrieb,  wenn alle Schalter wieder den  richtigen Schaltzustand  (entsprang.  Schaltfolgediagramm im  Stromlaufplan) haben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/2",
+    "description": "VU in Türzone",
+    "reaction": "Der untere Vorendschalter VU  schaltet innerhalb der Türzone  (falsche Schaltposition).  Eine mögliche Ursache ist  auch, dass einer der  Türzonenschalter nicht  ausgeschaltet hat.  Nothalt.  Rückkehr zu Normalbetrieb,  wenn alle Schalter wieder den  richtigen Schaltzustand  (entsprang.  Schaltfolgediagramm im  Stromlaufplan) haben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/3",
+    "description": "Fehler VO/VU",
+    "reaction": "Der Schaltzustand mindestens  eines Vorendschalters (VO,  VU) ist falsch (z.B. beide  Schalter gleichzeitig an oder  aber Aufzug in unterster Etage  und VU nicht an).  Die Fehlermeldung kann  allerdings auch auftreten,  wenn bei Positionierung über  Nothalt.  Sobald der Schaltzustand  beider Schalter wieder richtig  ist Rückkehr zum  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "150/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  Schalter die Türzonenschalter  SGO bzw. SGU falsch  schalten, da der Aufzug dann  eventuell den Etagenstand  falsch zählt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/4",
+    "description": "Bündig, SGM",
+    "reaction": "aus  Entsprechend Messung des  Positioniersystems befindet  sich der Aufzug innerhalb der  Türzone, aber der  Türzonenschalter SGM ist  ausgeschaltet (Schalter SGM  fehlerhaft oder Fehler im  Positioniersystem).  Nothalt.  Sobald SGM-Zustand und  Messung des  Positioniersystems wieder  übereinstimmen Rückkehr  zum Normalbetrieb.  Evtl. Reset erforderlich.  Positionsmesssystem und  Schalter SGM prüfen. Evtl.  neu einmessen. Befindet sich  der Inkrementalgeber zur  Positionsmessung am Motor  oder  Geschwindigkeitsbegrenzer,  dann kann der Fehler  während der technischen  Prüfung auftreten. In diesem  Fall einfach ein Reset  durchführen.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/5",
+    "description": "SGM",
+    "reaction": "an,Türz.aus  Entsprechend Messung des  Positioniersystems befindet  sich der Aufzug außerhalb der  Türzone, aber der  Türzonenschalter SGM ist  eingeschaltet (Schalter SGM  fehlerhaft oder Fehler im  Positioniersystem).  Nothalt.  Sobald SGM-Zustand und  Messung des  Positioniersystems wieder  übereinstimmen Rückkehr  zum Normalbetrieb.  Evtl. Reset erforderlich.  Positionsmesssystem und  Schalter SGM prüfen. Evtl.  neu einmessen.  Befindet sich der  Inkrementalgeber zur  Positionsmessung am Motor  oder  Geschwindigkeitsbegrenzer,  dann kann der Fehler  während der technischen  Prüfung auftreten. In diesem  Fall einfach ein Reset  durchführen.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/6",
+    "description": "KH5 nicht an",
+    "reaction": "Das Rückmeldesignal von der Nothalt.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "151/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion    Sicherheitsschaltung für das  Fahren mit offener Tür wurde  beim Einfahren in die Türzone  nicht aktiviert.  Sobald Rückmeldesignal  anliegt oder aber der Aufzug  nicht mehr innerhalb der  Türzone ist erfolgt Rückkehr  zu Normalbetrieb.  Sicherheitsrelais,  Magnetschalter und  Positionsmesssystem prüfen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/7",
+    "description": "KH5 nicht aus",
+    "reaction": "Das Rückmeldesignal von der  Sicherheitsschaltung für das  Fahren mit offener Tür wurde  beim Verlassen der Türzone  nicht deaktiviert.  Nothalt.  Sobald Rückmeldesignal  deaktiviert ist oder aber der  Aufzug sich innerhalb der  Türzone befindet erfolgt  Rückkehr zu Normalbetrieb.  Sicherheitsrelais,  Magnetschalter und  Positionsmesssystem prüfen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/8",
+    "description": "Zu zeitig",
+    "reaction": "angeh.   Aufzug hält vor Erreichen der  Bündigzone (Einmessen nicht  korrekt ausgeführt oder aber  die Bündigzone ist zu klein  gewählt -> Parameter; evtl.  auch Fehler bei Ansteuerung  des Antriebes).  Keine Fehlerreaktion; Aufzug  startet Nachregulieren (falls  aktiviert).",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/9",
+    "description": "Ziel überfahren",
+    "reaction": "Aufzug ist über die  Bündigstellung  hinausgefahren  (Einmessen nicht korrekt  ausgeführt oder aber die  Bündigzone ist zu klein  gewählt -> Parameter; evtl.  auch Fehler bei Ansteuerung  des Antriebes).  Keine Fehlerreaktion; Aufzug  startet Nachregulieren (falls  aktiviert).",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/10",
+    "description": "Nachreg.zu kurz",
+    "reaction": "Aufzug reguliert nach, aber  hält    noch vor Erreichen der  Bündigzone an (Einmessen  nicht korrekt ausgeführt oder  aber die Bündigzone ist zu  klein gewählt).  Dieser Fehler tritt auch auf,  wenn die Sicherheitsrelais  nach dem Einschalten noch  nicht den richtigen  Schaltzustand besitzen (KH6  und KH7 an, KH5 aus). In  Keine Fehlerreaktion; Aufzug  startet erneutes  Nachregulieren (max. 6-mal).  Größe der Türzone prüfen;  evtl. Bremswege neu  einmessen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "152/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  diesem Fall den Aufzug in  eine andere Etage schicken.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "Nachreg.zu weit",
+    "reaction": "Aufzug ist beim  Nachregulieren über die  Bündigzone hinausgefahren  (Einmessen nicht korrekt  ausgeführt oder aber die  Bündigzone ist zu klein  gewählt).  Keine Fehlerreaktion; Aufzug  startet erneutes  Nachregulieren (max. 6-mal).  Größe der Türzone prüfen;  evtl. Bremswege neu  einmessen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/12",
+    "description": "Nachreg.zu",
+    "reaction": "schn.   Beim Nachregulieren wurde  die maximal zugelassene  Geschwindigkeit (Parameter  „v Nachhol.“) überschritten.  Nothalt, danach  Fehlerzustand  “Übergeschw.”.  Rückkehr zum Normalbetrieb  nach 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/13",
+    "description": "Übergeschwind.",
+    "reaction": "Maximalgeschwindigkeit  überschritten. Die  Fehlermeldung erfolgt beim  Erreichen des 1,2fachen der  Nenngeschwindigkeit  (Parameter „v Nenn.“)  Nothalt  Rückkehr zum Normalbetrieb  nach 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/14",
+    "description": "Falsche",
+    "reaction": "Richtung   Das Positionssystem erkennt  eine andere  Bewegungsrichtung als die  vorgegebene Fahrtrichtung.  Mögliche Ursachen:  - Positionsmesssystem defekt  - Richtungssignale zum  Antrieb defekt  - falsche Einstellungen im  Antrieb  - Motorkabel falsch  angeschlossen  - Drehfeld der Zuleitung   falsch  Nothalt  Rückkehr zum Normalbetrieb  nach 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/15",
+    "description": "VO überfahren",
+    "reaction": "Bei Aufwärtsfahrt fuhr der  Aufzug beim Schalten des  oberen Vorendschalters noch   mit Nenngeschwindigkeit v3  (Falsche Schaltposition des  oberen Vorendschalters oder  Fehler im Positioniersystem).  Abbremsen auf  Einfahrgeschwindigkeit v0;  keine weitere Reaktion.  Fehlerbeseitigung: Der  Schaltpunkt des oberen  Vorendschalters muss näher  an die Endetage gelegt  werden.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/16",
+    "description": "VU überfahren",
+    "reaction": "Bei Abwärtsfahrt fuhr der  Aufzug beim Schalten des  unteren Vorendschalters noch  Abbremsen auf  Einfahrgeschwindigkeit v0;  keine weitere Reaktion.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "153/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  mit Nenngeschwindigkeit v3  (Falsche Schaltposition des  unteren Vorendschalters oder  Fehler im Positioniersystem).  Fehlerbeseitigung: Der  Schaltpunkt des unteren  Vorendschalters muss näher  an die Endetage gelegt  werden.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/17",
+    "description": "Magnet falsch",
+    "reaction": "Nur für Positionierung über  “Schalter”: Schaltfolge der  einzelnen Schalter  (Türzonenschalter,  Abbremsschalter) falsch.  Halt in nächster Etage,  danach Rückkehr zu  Normalbetrieb.  Magnetschalter und Magnete  prüfen!",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/18",
+    "description": "SGV in Türzone Der Abbremsschalter SGV",
+    "reaction": "schaltet innerhalb der Türzone  (falsche Schaltposition).  Eine mögliche Ursache ist  auch, dass einer der  Türzonenschalter nicht  ausgeschaltet hat.  Der Aufzug halt in der  nächstmöglichen Etage und  kehrt danach zum  Normalbetrieb zurück.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/19",
+    "description": "SGE in Türzone Der Referenzschalter SGE",
+    "reaction": "schaltet innerhalb der Türzone  (falsche Schaltposition).   Eine mögliche Ursache ist  auch, dass einer der  Türzonenschalter nicht  ausgeschaltet hat.  Nothalt.  Rückkehr zu Normalbetrieb,  wenn alle Schalter wieder den  richtigen Schaltzustand  (entspr. Schaltfolgediagramm  im Stromlaufplan) haben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/20",
+    "description": "Fehler SGE",
+    "reaction": "Der Zustand des  Referenzschalters SGE ist  falsch.  Die Fehlermeldung kann  allerdings auch auftreten,  wenn bei Positionierung über  Schalter die Türzonenschalter  SGO bzw. SGU falsch  schalten, da der Aufzug dann  eventuell den Etagenstand  falsch zählt.  Nothalt.  Sobald der Schaltzustand des  Schalter wieder richtig ist  Rückkehr zum Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/21",
+    "description": "Schlupf zu groß Bei Aufzügen mit",
+    "reaction": "Schlupfüberwachung: Schlupf  zu groß  Nothalt, danach Außer  Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/22",
+    "description": "AWG2 – CAN",
+    "reaction": "CAN-Verbindung zum AWG2  gestört  Nothalt  Zurück zu Normalbetrieb  wenn CAN-Verbindung  wieder okay",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/23",
+    "description": "AWG2-Fehlersig. Störmeldesignal von der",
+    "reaction": "Auswerteeinheit Doppel-AWG  (UEA.1)  Beenden der letzten Fahrt,  danach Außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "154/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/24",
+    "description": "Schutzraum oben Schutzraumüberwachung",
+    "reaction": "oben (Schachtkopf) hat  ausgelöst  Nur noch Fahrten mit  Inspektion / Rückholung  möglich; sonst Nothalt;  Schutzraumüberwachung  muss manuell zurück gesetzt  werden, danach wieder  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/25",
+    "description": "Schutzraum unt. Schutzraumüberwachung",
+    "reaction": "unten (Schachtgrube) hat  ausgelöst  Siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/26",
+    "description": "Stütze oben aus Automatische Stütze oben hat",
+    "reaction": "trotz Ansteuerung nicht  angezogen  Nothalt; danach Außer  Betrieb  Wenn Stütze angezogen hat  Rückkehr zum Normalbetrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/27",
+    "description": "Stütze oben an",
+    "reaction": "Automatische Stütze oben hat  trotz Abschaltung nicht  abgefallen  Nothalt; danach Außer  Betrieb  Wenn Stütze abgefallen ist  Rückkehr zum Normalbetrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/28",
+    "description": "Stütze unt. aus Automatische Stütze unten hat",
+    "reaction": "trotz Ansteuerung nicht  angezogen  Siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/29",
+    "description": "Stütze unt. an",
+    "reaction": "Automatische Stütze unten hat  trotz Abschaltung nicht  abgefallen  Siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/30",
+    "description": "Schutzraum",
+    "reaction": "offen  Schutzraumüberwachung hat  ausgelöst  Siehe oben",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/31",
+    "description": "Klappschürze",
+    "reaction": "aus  Klappschürze ausgefahren,  obwohl sie (abhängig vom  momentanen Etagenstand  bzw. Steuerungszustand und  vom Typ der Schürze)  eingefahren sein sollte  Nothalt; danach Außer  Betrieb  Wenn Schürze erforderlichen  Zustand angenommen hat  Rückkehr zum Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/32",
+    "description": "Schürz.nicht",
+    "reaction": "aus  Klappschürze nicht  ausgefahren, obwohl sie  (abhängig vom momentanen  Etagenstand bzw.  Steuerungszustand und vom  Typ der Schürze) eingefahren  sein sollte  Nothalt; danach Außer  Betrieb  Wenn Schürze erforderlichen  Zustand angenommen hat  Rückkehr zum Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/48",
+    "description": "Trenntür",
+    "reaction": "b.Fahrt  Trenntür wurde bei Fahrt  geöffnet  Keine weitere Reaktion; wird  nur als zusätzliche  Information zur besseren  Fehlerdiagnose im  Fehlerspeicher abgelegt, falls  die Trenntür auch über einen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "155/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  Kontakt im Sicherheitskreis  verfügt.  Weitere Fahrten bei offener  Trenntür nur im  Sonderfahrtmodus möglich.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/64",
+    "description": "Pos.abweichung",
+    "reaction": "Beim Schalten des  Türzonenschalters SGM  weicht die momentan  gemessene Position erheblich  (Parameter „Max. Diff. SGM)  vom bei der Lernfahrt  gemessenen Schaltpunkt ab.  Nothalt, danach Außer  Betrieb.  Inkrementalgeber zur  Positionsmessung prüfen;  evtl. neu einmessen.  Befindet sich der  Inkrementalgeber zur  Positionsmessung am Motor  oder  Geschwindigkeitsbegrenzer,  dann kann der Fehler  während der technischen  Prüfung auftreten. In diesem  Fall einfach ein Reset  durchführen.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/80",
+    "description": "Aufs.ausfahren",
+    "reaction": "Zeitüberschreitung beim  Ausfahren der  Aufsetzvorrichtung  Nach der parametrierbaren  Anzahl von Ausfahrversuchen  sinkt der Aufzug in die  unterste Etage ab und geht  außer Betrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/81",
+    "description": "Aufs.einfahren",
+    "reaction": "Zeitüberschreitung beim  Einfahren der  Aufsetzvorrichtung  Nach der parametrierbaren  Anzahl von Einfahrversuchen  setzt der Aufzug wieder auf  und geht außer Betrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/82",
+    "description": "Aufs.aus",
+    "reaction": "b.Fahrt  Die Aufsetzvorrichtung ist  plötzlich während einer Fahrt  nicht mehr komplett  eingefahren  Nothalt.  Danach wird versucht, die  Aufsetzvorrichtung wieder  einzufahren. Falls möglich,  geht Aufzug dann wieder in  Normalbetrieb.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/83",
+    "description": "Aufs.defekt",
+    "reaction": "Aufsetzvorrichtung kann nicht  mehr ein- bzw. ausgefahren  werden  Außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/84",
+    "description": "Aufs.Unterdruck Der Aufzug hat in",
+    "reaction": "aufgesetztem Zustand beim  Nachpumpen die max.  Position (Parameter  „Pump.aus[mm]“)  überschritten, ohne dass das  Unterdrucksignal abgeschaltet  Beenden des Nachpumpens;  danach Außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "156/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  hat.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/85",
+    "description": "Aufgesetzt- Sign.",
+    "reaction": "Obwohl der Aufzug  angehoben hat und die  Aufsetzvorrichtung  eingefahren ist, hat das  Aufgesetzt-Signal nicht  abgeschaltet.  Fehlerzustand; falls  Aufgesetzt-Signal abschaltet  Rückkehr zum Normalbetrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/86",
+    "description": "Kein Aufges.- Sig",
+    "reaction": "Aufzug ist beim Absenken  bereits unterhalb der  Aufsetzzone (Parameter  „Aufs.zone[mm]“), aber das  Aufgesetzt-Signal hat nicht  zugeschaltet.  Fehlerzustand; falls  Aufgesetzt-Signal zuschaltet  Rückkehr zum Normalbetrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/87",
+    "description": "Fehl.Aufs.fahrt 5 erfolglose Versuche, den",
+    "reaction": "Aufzug auf die  Aufsetzvorrichtung  aufzusetzen oder wieder  anzuheben  Außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/88",
+    "description": "Fehl.Korr.fahrt 10 erfolglose Versuche, den",
+    "reaction": "Aufzug bündig in die nächste  Etage zu fahren (z.B. nach  einem Fehler oder nach  Inspektionsfahrt)  Außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "2",
+    "reaction": "Fehler OP-Vorr. Fehlerhafter Zustand der OP- Vorrichtung (z.B. beide  Endschalter gesetzt)  Aufzug fährt weiter, sobald  OP-Vorrichtung wieder  definierten Zustand hat.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "3",
+    "reaction": "OP-Vorr.Riegel  OP-Vorr. beim Start nicht  verriegelt   s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "4",
+    "reaction": "OP-Vorr.n.außen OP-Vorrichtung lässt sich  nicht ausfahren  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "5",
+    "reaction": "OP-Vorr.n.innen OP-Vorrichtung lässt sich  nicht einfahren  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "6",
+    "reaction": "OP-Vorr.Rieg.an Riegel der OP-Vorrichtung  lässt sich nicht ausfahren  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/11",
+    "description": "7",
+    "reaction": "OP- Vorr.Rieg.aus  Riegel der OP-Vorrichtung  lässt sich nicht einfahren  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/12",
+    "description": "8",
+    "reaction": "Unkontr.Bewegun g  Aufzug hat sich ohne  Fahrkommando bei geöffneten  Türen aus der Türzone  bewegt (EN81 Anhang A3)  Aufzug geht außer Betrieb  Rückkehr in Normalbetrieb  nur über speziellen  Resettaster oder durch  Einschalten Rückholung bzw.  Inspektion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/12",
+    "description": "9",
+    "reaction": "Eing.unkontr.Be w  Aufzug hat unkontrollierte  Bewegung erkannt, aber der  Eingang zur Speicherung der  Aufzug geht außer Betrieb  Rückkehr in Normalbetrieb  nur über speziellen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "157/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  unkontrollierten Bewegung hat  nicht geschaltet  Resettaster oder durch  Einschalten Rückholung bzw.  Inspektion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/13",
+    "description": "1",
+    "reaction": "Kein Abbremsen  Aufzüge mit  Verzögerungskontrollschaltun g: Aufzug hat nicht  ausreichend verzögert  Nothalt  Rückkehr zum Normalbetrieb  nach 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/13",
+    "description": "2",
+    "reaction": "Abbremsüb.n.aus Aufzüge mit  Verzögerungskontrollschaltun g: Kontrollschaltung im  Stillstand immer noch  ausgelöst  Rückkehr zum Normalbetrieb  wenn  Verzögerungskontrollschaltun g wieder okay",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/14",
+    "description": "4",
+    "reaction": "LIMAX Floortab  Bei Verwendung LIMAX Safe:  Abweichung beim Vergleich  der Etagenpositionen  zwischen LIMAX und HSE  Nothalt  Aufzug neu einmessen; evtl.  LIMAX defekt",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/14",
+    "description": "5",
+    "reaction": "LIMAX Insp.sig  Bei Verwendung LIMAX Safe:  Beschaltung der  Inspektionssignale falsch  Verdrahtung prüfen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "176/14",
+    "description": "6",
+    "reaction": "LIMAX  Relaistest  Bei Verwendung LIMAX Safe:  Der zyklische Relaistest  dauert ungewöhnlich lange  LIMAX Safe prüfen; bei  wiederholtem Auftreten  LIMAX wechseln",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "192/1",
+    "description": "Fahrzeitüberw.",
+    "reaction": "Zeit zwischen 2  Zustandswechseln der  Schachtschalter SGM, SGO  bzw. SGU überschritten  (Laufzeitüberwachung nach  EN81; Parameter  „Fahrüberw.“).  Nothalt  Aufzug geht außer Betrieb",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "192/2",
+    "description": "LS/Rufmissbrauc h",
+    "reaction": "Anzahl von Fahrten auf  Innenrufe, bei denen in der  Etage die Lichtschranke nicht  unterbrochen wurde,  überschritten (Parameter „IR  ohne LS“).  Mögliche Ursachen:  - Innenrufmissbrauch  - Lichtschranke defekt  Löschen aller Innenrufe;  keine weitere Fehlerreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "192/3",
+    "description": "Notruf",
+    "reaction": "Notruftaster betätigt.  Der Notruf wird nur im  Fehlerspeicher angezeigt,  wenn ein Eingang der HSE  (normalerweise Eingang 14,  da dieser auf der HSE bereits  mit der Notrufleitung  Keine weitere Reaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "158/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion  verbunden ist) als  „Notruf“ parametriert wurde.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "193/4",
+    "description": "Fahrzeit Halten Fahrzeitüberschreitung,",
+    "reaction": "obwohl der Aufzug bereits  beim Abbremsen/Anhalten ist  Nothalt  Rückkehr zum Normalbetrieb  nach 2s.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/1",
+    "description": "242/1",
+    "reaction": "243/1  Schließfehl.Tür  x  Zeitüberschreitung beim  Türschließen  Türmotor / Türsteuergerät  prüfen;  Parameter \"Schließzeit\"  prüfen.  Aufzugssteuerung startet  mehrere neue  Schließversuche (Parameter  \"Zuversuche\"), danach  werden alle Rufe gelöscht.  Erneute Schließversuche,  wenn neuer Ruf betätigt wird.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/2",
+    "description": "242/2",
+    "reaction": "243/2  Öfnungsfehl.Tür  x   Zeitüberschreitung beim  Türöffnen  Türmotor / Türsteuergerät  prüfen;  Parameter \"Öffnungzeit\"  prüfen.  Aufzugssteuerung startet  mehrere neue  Öffnungsversuche  (Parameter \"Aufversuche\"),  danach werden alle Rufe  gelöscht.  Erneute Öffnungsversuche,  wenn neuer Ruf betätigt wird.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/3",
+    "description": "242/3",
+    "reaction": "243/3  Rev.fehler Tür  x   Zeitüberschreitung beim  Wiederöffnen der Tür während  des Schließvorganges  s.o.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/4",
+    "description": "242/4",
+    "reaction": "243/4  Endsch.Tür x  auf   Türaufendschalter einer Tür  wird plötzlich ohne  Türkommando deaktiviert.  Bei neuem Ruf wird versucht,  Tür wieder richtig zu öffnen.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/5",
+    "description": "242/5",
+    "reaction": "243/5  Endsch. Tür x  zu   Türzuendschalter einer Tür  wird plötzlich ohne  Türkommando deaktiviert.  Bei neuem Ruf wird versucht,  Tür wieder richtig zu  schließen.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/6",
+    "description": "242/6",
+    "reaction": "243/6  SK Tür x  gebrückt   Sicherheitskreis Fahrkorbtür  gebrückt  Aufzug geht außer Betrieb  (gefährlicher Zustand).  Verdrahtung prüfen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/7",
+    "description": "242/7",
+    "reaction": "243/7  Drängeln Tür x  Steuerung führt ein  Zwangstürschließen aufgrund  einer ständig unterbrochenen  Lichtschranke durch.  Falls möglich wird die Tür mit  reduzierter Kraft geschlossen.  Zusätzlich ertönt ein  akustisches Signal (falls  vorhanden)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "159/283",
+    "description": "Nr.",
+    "reaction": "Fehlermeldung  Beschreibung  Steuerungsreaktion",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/8",
+    "description": "242/8",
+    "reaction": "243/8  Lichtschr. Tür  x   Lichtschranke permanent  unterbrochen (Parameter  “Max. LS“)  Steuerung führt evtl.  Zwangstürschließen durch  (falls parametriert)",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/9",
+    "description": "242/9",
+    "reaction": "243/9  Hemmung Tür x  Reversierkontakt permanent  unterbrochen  Tür bleibt offen; zurück zu  Normalbetrieb wenn  Reversierkontakt wieder  deaktiviert.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/10",
+    "description": "242/10",
+    "reaction": "243/10  Tür x  falsch.Et.  Nur bei automatischen  Schachttüren mit  Endschaltern:  Türaufendschalter in anderer  Etage betätigt  Aufzug geht außer Betrieb.  Zurück zum Normalbetrieb,  wenn die Schachttür wieder  geschlossen ist.",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "241/11",
+    "description": "242/12",
+    "reaction": "243/13  Tür x LS-Fehler Fehlersignal der Lichtschranke  aktiv  Aufzug fährt weiter; Türen  werden langsam geschlossen  (Drängeln)  Exxx    Fehlercode einer externen  CANopen-Baugruppe (z.B.  Frequenzumrichter Zetadyn  mit CANopen-Ansteuerung)  Siehe Betriebsanleitung der  externen Baugruppe (z.B.  Frequenzumrichter Zetadyn)    Unbek.Fehler  Durch eine externe CANopen- Baugruppe wurde ein  Fehlercode gesendet, der  noch nicht in der  Aufzugsteuerung hinterlegt ist  Unter Angabe des  Fehlercodes beim  Steuerungshersteller  nachfragen",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "160/283",
+    "description": "4.15 Fehlermeldungen während des Einmessvorganges",
+    "reaction": "Fehler: Oberste  Etage nicht er- reicht!    Beim Einmessvorgang konnte der Aufzug die oberste Etage nicht  erreichen.  Mögliche Ursachen:  - Fehlerhafter Schalter SGM bzw. Schaltpunkte für SGM falsch gesetzt  - Oberer Vorendschalter VO hat nicht eingeschaltet  - Unterer Vorendschalter VU hat nicht ausgeschaltet  Türfehler  Fehler beim Türschließen vor dem Starten der Einmessfahrt.  Aufzug nicht in  unterster Etage     Der Aufzug befindet sich beim Starten des Einmessvorganges nicht in  der untersten Etage.  Die Schachtschalter müssen bei Beginn des Einmessvorganges  (Komplettes Einmessen oder Einmessen Schachtschalter) folgende  Zustände haben:  - SGM eingeschaltet  - VO ausgeschaltet und VU eingeschaltet  oder  - SGE ausgeschaltet  - SGO und SGU (falls vorhanden) eingeschaltet  Lernfahrt nicht  möglich; Zustand  prüfen!  Der Aufzug befindet sich beim Starten des Einmessvorganges nicht im  Zustand “Setup” (z.B. Inspektion / Rückholung an, Fehlerzustand).  Zeitüberschreit. Zeit zwischen 2 Zustandswechseln von SGM, SGO bzw. SGU beim  Einmessen überschritten (siehe Parameter “Fahrüberw.”).  Zustand geändert  Neuer Zustand:  Zustand des Aufzuges während des Einmessvorganges geändert (z.B.  Fehlerzustand, Rückholung zugeschaltet).  Etagenzählfehler  SGM prüfen  Der Schalter SGM hat während des Einmessvorganges zu häufig  geschaltet (z.B. durch Prellen des Schalters).  VO schaltet  in Türzone  Oberer Vorendschalter VO hat geschaltet, während sich der Aufzug  innerhalb der Türzone befand. Schaltpunkt prüfen.  VU schaltet  in Türzone  Unterer Vorendschalter VU hat geschaltet, während sich der Aufzug  innerhalb der Türzone befand. Schaltpunkt prüfen.  SGE schaltet  in Türzone  Referenzschalter SGE hat geschaltet, während sich der Aufzug  innerhalb der Türzone befand. Schaltpunkt prüfen.  Fehler SGO  Schalter SGO hat während des Einmessvorganges nicht geschaltet.  Fehler SGU  Schalter SGU hat während des Einmessvorganges nicht geschaltet.  Position SGO  Falsch  Falsche Schaltfolge SGO (SGO schaltet undefiniert bzw. an falschen  Punkten). Eventuell sind SGO und SGU vertauscht.  Position SGU  Falsch  Falsche Schaltfolge SGU (SGU schaltet undefiniert bzw. an falschen  Punkten). Eventuell sind SGO und SGU vertauscht.  Zählrichtung  Falsch  Zählrichtung des Positionsencoders falsch. Die beiden Kanäle des  Encoders müssen getauscht werden.  Setup Pos.schal-  ter nicht fertig  Das Einmessen der Bremswege wurde gestartet, bevor das Einmessen  der Positionsschalter beendet ist.  Keine Signale  vom Encoder  Keine Signale vom Encoder während der Aufzug fährt. Encoder prüfen!",
+    "manufacturer": "KLST"
+  },
+  {
+    "code": "161/283",
+    "description": "Encoderstörung",
+    "reaction": "Unregelmäßige Encodersignale während des Einmessvorgangs.  Encoder prüfen!  Achtung!Türzone  zu klein für  Haltewege! Ein- stellung prüfen!  Im Normallfall sollte die Türzone (SGM) so eingestellt werden, dass das  Abschalten der Geschwindigkeitssignale erst erfolgt, wenn sich der  Aufzug bereits in der Türzone befindet. Das Einmessen hat aber  ergeben, dass das in mind. 1 Etage nicht der Fall ist. Deshalb entweder  (falls möglich) Einstellungen am Antrieb verändern, um Anhalteweg zu  verkürzen oder aber die Türzone vergrößern.  Achtung!Bündig- zone zu klein  für Fahrgeschw.  Berechnen? <ET>  Die parametrierte Bündigzone ist zu klein in Bezug auf die gemessenen  Anhaltewege. Damit ist z.B. ein Nachregulieren nicht möglich.  Bei Betätigen von ENTER werden die Parameter für die Bündigzone  automatisch angepasst.  Nachholgeschw.  zu groß für Auf-  zug mit UCM  Bei Aufzügen mit Überwachungsschaltung für unkontrollierte Bewegung  (EN81-A3) muss der Aufzug spätestens abschalten, wenn die  Nachholgeschwindigkeit 200 mm/s überschreitet. Die  Geschwindigkeitsmessung während des Einmessvorgangs hat aber  eine größere Geschwindigkeit beim Nachholen ermittelt.  Nachholgeschwindigkeit verkleinern!  Lernfahrt nicht  notwendig, nur  Parameter „Setup  beend.=Ja“setzen  Diese Ausschrift erscheint, wenn bei Aufzügen mit Positionierung über  Schalter versucht wird, die Lernfahrt zu starten.",
+    "manufacturer": "KLST"
+  },
+      {
+      "code": "F10 / F11",
+      "description": "Tür öffnet/schließt nicht korrekt",
+      "reaction": "Salznebel, Vibrationen, blockierte Laufschienen",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F20 / F22",
+      "description": "Türverriegelung nicht eingerastet",
+      "reaction": "Türkontakte oder Endschalter fehlerhaft",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F25",
+      "description": "Lichtschranke unterbrochen",
+      "reaction": "Sensorausfall oder Schmutz, Wasser in Sensoren",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F74",
+      "description": "Encoder-Fehler",
+      "reaction": "Positionierungsfehler durch Bewegung des Schiffs",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F95",
+      "description": "Kabinenposition nicht erkannt",
+      "reaction": "Seegang, Rutschgefahr an Seiltraktion, Encoder prüfen",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F120",
+      "description": "Lageabweichung (Skew Error)",
+      "reaction": "Plattformbewegung verursacht Schieflastmeldung",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F61",
+      "description": "Keine Kommunikation mit Türsteuerung",
+      "reaction": "Korrodierte Kontakte, Steuerungsausfall",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F81",
+      "description": "FU-Störung (Frequenzumrichter)",
+      "reaction": "Spannungseinbruch, Motorüberlast",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F85",
+      "description": "Notrufsystem gestört",
+      "reaction": "GSM-Einheit defekt, Antenne abgeschirmt",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F41",
+      "description": "Antrieb überhitzt",
+      "reaction": "Dauerbetrieb ohne Kühlung (z. B. Maschinenraum zu heiß)",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F91",
+      "description": "Sicherheitskreis unterbrochen",
+      "reaction": "Not-Aus, Türkontakte oder Notbremse aktiv",
+      "manufacturer": "Kone"
+    },
+    {
+      "code": "F100",
+      "description": "Notstromversorgung nicht bereit",
+      "reaction": "Batterie defekt oder keine Umschaltung bei Blackout",
+      "manufacturer": "Kone"
+    },
+        {
+      "code": "0100",
+      "description": "Driver failure – OCSS cannot operate",
+      "reaction": "OCSS operating mode disabled due to driver failure",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0101",
+      "description": "Cannot operate in emergency power mode",
+      "reaction": "Car won't run on EPO power mode",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0102",
+      "description": "Door cannot close in time (DCL/DFC/DW missing)",
+      "reaction": "Check door signals DCL, DFC, DW",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0103",
+      "description": "Door cannot fully open in time (no DOL)",
+      "reaction": "Check DOL signal",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0205",
+      "description": "No SE signal – cannot start",
+      "reaction": "Check door bypass and photoelectric sensors",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0210",
+      "description": "DZ signal not detected when stopped",
+      "reaction": "Check DZ sensor and DY‑TYP setting",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0211",
+      "description": "Safety loop disconnected in fast travel",
+      "reaction": "Inspect safety circuit continuity",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0218",
+      "description": "Frequency converter failure – shutdown",
+      "reaction": "Check drive and inverter status",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0225",
+      "description": "110 VAC dead for 5 s",
+      "reaction": "Power interruption detected",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0226",
+      "description": "LS fault – 1LS or 2LS abnormal",
+      "reaction": "Inspect limit switch wiring or signals",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "0230",
+      "description": "RSL address check error",
+      "reaction": "Remote station address incorrect",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "2000",
+      "description": "Software running error – CPU reset",
+      "reaction": "Electronic software failure",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "2002",
+      "description": "5 V phase < 2.5 V – power failure",
+      "reaction": "Check power supply voltage",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "2105",
+      "description": "DZ input signal error",
+      "reaction": "DZ sensor input invalid",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "2600",
+      "description": "Overshoot – elevator passed stop",
+      "reaction": "Curve generator synchronization failure",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "2701",
+      "description": "DBSS ready timeout after PREPARE TO RUN",
+      "reaction": "Drive not ready within 5 s",
+      "manufacturer": "Otis"
+    },
+    {
+      "code": "2800",
+      "description": "Absolute overspeed",
+      "reaction": "Speed exceeded allowable limit",
+      "manufacturer": "Otis"
+    }
+]
+
