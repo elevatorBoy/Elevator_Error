@@ -1446,10 +1446,502 @@
       "manufacturer": "Otis"
     },
     {
-      "code": "2800",
-      "description": "Absolute overspeed",
-      "reaction": "Speed exceeded allowable limit",
-      "manufacturer": "Otis"
+        "code": "001",
+        "description": "Steuerspannung",
+        "reaction": "-",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "002",
+        "description": "Fahrkorb im Endschalter (unten/oben)",
+        "reaction": "-",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "003",
+        "description": "Sicherheitskreis vor Türschalter unterbrochen (K1.10) / S 300 Seilhydraulik ausgelöst",
+        "reaction": "-",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "004",
+        "description": "Sicherheitsschaltung ausgelöst",
+        "reaction": "-",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "005",
+        "description": "Laufzeitüberwachung Fahrantrieb",
+        "reaction": "-",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "006",
+        "description": "Soll-/Istüberwachung ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "007",
+        "description": "Türregel fehler allgemein",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "008",
+        "description": "Laufzeitüberwachung Tür-1",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "009",
+        "description": "Laufzeitüberwachung Tür-2",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "010",
+        "description": "Türregel fehler 1. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "011",
+        "description": "Türregel fehler 2. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "012",
+        "description": "Türregel fehler 3. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "013",
+        "description": "Türregel fehler 4. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "014",
+        "description": "Türregel fehler 5. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "015",
+        "description": "Türregel fehler 6. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "016",
+        "description": "Türregel fehler 7. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "017",
+        "description": "Türregel fehler 8. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "018",
+        "description": "Türregel fehler 9. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "019",
+        "description": "Türregel fehler 10. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "020",
+        "description": "Türregel fehler 11. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "021",
+        "description": "Türregel fehler 12. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "022",
+        "description": "Türregel fehler 13. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "023",
+        "description": "Türregel fehler 14. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "024",
+        "description": "Türregel fehler 15. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "025",
+        "description": "Türregel fehler 16. Haltestelle",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "026",
+        "description": "Kabinentürschalter S7 hat nicht geschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "027",
+        "description": "Motorschutz ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "028",
+        "description": "Korrekturschalter gleichzeitig geschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "029",
+        "description": "0,3m/s-Überwachung ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "030",
+        "description": "Maxmoment bei FR",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "031",
+        "description": "Zwischenkreis / Motorkreis bei FR",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "032",
+        "description": "Überschwindigkeit bei Einfahrt",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "033",
+        "description": "Richtungskontrolle bei FR",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "034",
+        "description": "Quittung Reglerfreigabe bei FR",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "035",
+        "description": "Überschwindigkeit",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "036",
+        "description": "Übertemperatur Umrichter / Motor",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "037",
+        "description": "Klemmender Ruftaster",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "038",
+        "description": "Fahrschütze nicht angezogen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "039",
+        "description": "Fahrschütze nicht abgefallen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "040",
+        "description": "Bremse nicht geöffnet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "041",
+        "description": "Bremse nicht geschlossen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "042",
+        "description": "Bremsschütz – K 197 nicht abgefallen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "043",
+        "description": "Insp.schütz – K 53 nicht abgefallen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "044",
+        "description": "Richtungseingänge Inspektion Dauersignal",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "045",
+        "description": "Sicherheitsk. K 130 nicht abgefallen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "046",
+        "description": "Checksummen fehler EEPROM",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "047",
+        "description": "EEPROM defekt / fehlt",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "048",
+        "description": "Lfz.-überwachung Hydraulikbremsmotor",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "049",
+        "description": "keine Freigabe vom Anlaufreduktion",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "050",
+        "description": "Verzögerungskontrolle ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "051",
+        "description": "Bremsschleifüberwachung",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "052",
+        "description": "Laufzeitüberwachung Fahrantriebe Stufe 2",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "053",
+        "description": "Es beide Endschalter Tür-1 geschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "054",
+        "description": "Es beide Endschalter Tür-2 geschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "055",
+        "description": "Schaltfirmenschalter bei NUSA ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "056",
+        "description": "Schalter für Riemenspannung bei NUSA ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "060",
+        "description": "Neustart",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "061",
+        "description": "Inspektion / Rückholsteuerung",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "062",
+        "description": "Evakuierung",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "063",
+        "description": "Korrekturfahrt",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "064",
+        "description": "Unbündig bei Fahrten de",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "065",
+        "description": "Aufzug aus",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "066",
+        "description": "Trenntür öffnen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "067",
+        "description": "Überlast",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "068",
+        "description": "Einklemmschutz Glastür ausgelöst",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "069",
+        "description": "Wartung eingeschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "070",
+        "description": "Wartung ausgeschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "900",
+        "description": "Inspektion / Rückholsteuerung",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "901",
+        "description": "Aufzug aus",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "902",
+        "description": "Trenntür öffnen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "903",
+        "description": "Führeraufzug ein",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "904",
+        "description": "Überlast",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "905",
+        "description": "Vollast",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "906",
+        "description": "Notstrom-/Evakuierungsbetrieb",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "907",
+        "description": "V-Fahrt innen",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "908",
+        "description": "V-Fahrt aussen / GVF",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "909",
+        "description": "Nachholfahrt",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "910",
+        "description": "Fahrt zur Parketage",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "911",
+        "description": "Korrekturfahrt",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "912",
+        "description": "keine Betriebsbereitschaft vom FR",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "913",
+        "description": "S 8 bei Drehtüren nicht geschaltet",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "914",
+        "description": "Umsteuerverzögerung bei Türfehler",
+        "reaction": "",
+        "manufacturer": "Osma"
+    },
+    {
+        "code": "915",
+        "description": "Anlaufverriegelung aktiv",
+        "reaction": "",
+        "manufacturer": "Osma"
     }
 ]
 
